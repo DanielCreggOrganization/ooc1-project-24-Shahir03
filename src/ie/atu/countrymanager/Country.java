@@ -25,7 +25,7 @@ public class Country {
     public float getnumberOfCitizens(){
         return this.numberOfCitizens;
     }
-    public double averagesalaryEuro(){
+    public double getaveragesalaryEuro(){
         return this.averagesalaryEuro;
     }
 
@@ -33,7 +33,17 @@ public class Country {
     public void setidNumber(int idNumber){
         this.idNumber = idNumber;
     }
+    public void setname(String name){
+        this.name = name;
+    }
+    public void numberOfCitizens(float numberOfCitizens){
+        this.numberOfCitizens = numberOfCitizens;
+    }
+    public void averagesalaryEuro(double averagesalaryEuro){
+        this.averagesalaryEuro= averagesalaryEuro;
+    }
     
+
 
 
 
