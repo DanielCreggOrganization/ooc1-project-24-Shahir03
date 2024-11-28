@@ -17,7 +17,12 @@ public class Main {
     Scanner userInput = new Scanner(System.in);
     int userSelection = 0; //Used to store user Menu option selection
 
-    
+
+    //Create infinite while loop to display Menu after every command
+    while(true){
+        //Display Menu to console
+        
+    }
     }
 
 }
