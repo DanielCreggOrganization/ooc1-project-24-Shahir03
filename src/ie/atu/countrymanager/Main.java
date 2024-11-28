@@ -41,8 +41,11 @@ public class Main {
             //Closer the user Input Scanner
             userInput.close();
             break; //Break ot of display infinite loop
-             }
-         }
-    }
 
-}
+             } //End of if
+
+         } //End of while
+
+    } // End of Main Method
+
+} //End of Main Class
