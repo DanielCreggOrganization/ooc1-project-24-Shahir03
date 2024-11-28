@@ -29,7 +29,13 @@ public class Country {
         return this.averagesalaryEuro;
     }
 
+    //Setter Methods
+    public void setidNumber(int idNumber){
+        this.idNumber = idNumber;
+    }
     
+
+
 
 
     
