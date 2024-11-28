@@ -22,6 +22,15 @@ public class Country {
     public String getName(){
         return this.name;
     }
+    public float getnumberOfCitizens(){
+        return this.numberOfCitizens;
+    }
+    public double averagesalaryEuro(){
+        return this.averagesalaryEuro;
+    }
+
+    
+
 
     
 
