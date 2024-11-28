@@ -32,7 +32,17 @@ public class Main {
         System.out.println("(5) Quit.");
         System.out.println("Select an option from 1 to 5 and press Enter");
 
-    }
+        //store user menu option selection
+        userSelection = userInput.nextInt();
+
+        if(userSelection == 5){ // Quit
+
+            System.out.println("Student Application Closing - Goodbye!");
+            //Closer the user Input Scanner
+            userInput.close();
+            break; //Break ot of display infinite loop
+             }
+         }
     }
 
 }
