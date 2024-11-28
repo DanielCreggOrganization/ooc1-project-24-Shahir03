@@ -23,7 +23,7 @@ public class Main {
         //Display Menu to console
         System.out.println("");
         System.out.println("###############################");
-        System.out.println("# Studient Applicarion v0.9 #")
+        System.out.println("# Studient Applicarion v0.9 #");
         System.out.println("###############################");
         System.out.println("(1) Add a Country.");
         System.out.println("(2) Delete a Country.");
