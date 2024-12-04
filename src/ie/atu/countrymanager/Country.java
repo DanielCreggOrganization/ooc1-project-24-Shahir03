@@ -36,19 +36,11 @@ public class Country {
     public void setname(String name){
         this.name = name;
     }
-    public void numberOfCitizens(float numberOfCitizens){
-        this.numberOfCitizens = numberOfCitizens;
+    public void setNumberOfCitizens(float numberOfCitizens){
+        this.numberOfCitizens = numberOfCitizens;    
     }
-    public void averagesalaryEuro(double averagesalaryEuro){
-        this.averagesalaryEuro= averagesalaryEuro;
-    }
-    
-
-
-
-
-
-    
-
+    public void setAveragesalaryEuro(double averagesalaryEuro){
+        this.averagesalaryEuro = averagesalaryEuro;
+    }    
 
 }
