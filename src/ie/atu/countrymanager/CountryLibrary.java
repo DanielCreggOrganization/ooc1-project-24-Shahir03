@@ -26,5 +26,12 @@ public class CountryLibrary {
         return false; //Return false if country not Found
     }
 
+    //Count the total number of Countries
+    public int countCountries(){
+        return countries.size();
+    }
+
+    
+
 
 }
