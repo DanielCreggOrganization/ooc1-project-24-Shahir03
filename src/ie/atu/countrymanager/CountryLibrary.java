@@ -31,7 +31,17 @@ public class CountryLibrary {
         return countries.size();
     }
 
-    
+    //Search for a country by ID
+public Country findCountrybyId(int idNumber){
+    for (Country country : countries) {
+        if (country.getidNumber() == idNumber){
+            return country;
+        }
+    }
+    return null; //Return null if Country was not Found
+}
+
+
 
 
 }
