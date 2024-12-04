@@ -10,7 +10,10 @@ public class CountryLibrary {
         countries = new ArrayList<>();
     }
 
-    //
+    //Add a Country
+    public void addCountry( Country country){
+        countries.add(country);
+    }
 
 
 }
