@@ -34,7 +34,8 @@ public class Main {
             System.out.println("(5) Quit.");
             System.out.println("Select an option from 1 to 5 and press Enter");
 
-
+            // User input for menu selection
+            userSelection = userInput.nextInt();
 
         
     //Create Object
