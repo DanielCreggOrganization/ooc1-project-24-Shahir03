@@ -37,17 +37,56 @@ public class Main {
             // store user menu option selection
             userSelection = userInput.nextInt();        
 
-        if(userSelection == 5){ // Quit
-
-            System.out.println("Student Application Closing - Goodbye!");
-            //Closer the user Input Scanner
-            userInput.close();
-            break; //Break ot of display infinite loop
-
-             } //End of if
-
-         } //End of while
-
-    } // End of Main Method
-
-} //End of Main Class
+            switch (userSelection) {
+                case 1: {
+                    System.out.print("Enter country ID: ");
+                    int id = userInput.nextInt();
+                    userInput.nextLine(); // newline
+                    System.out.print("Enter country name: ");
+                    String name = userInput.nextLine();
+                    System.out.print("Enter number of citizens: ");
+                    float citizens = userInput.nextFloat();
+                    System.out.print("Enter average salary (Euro): ");
+                    double salary = userInput.nextDouble();
+                    
+                    Country newCountry = new Country(id, name, citizens, salary);
+                    library.addEntity(newCountry);
+                    break;
+                }
+                case 2: {
+                    System.out.print("Enter country ID to delete: ");
+                    int id = userInput.nextInt();
+                    if (library.deleteEntity(id)) {
+                        System.out.println("Country deleted.");
+                    } else {
+                        System.out.println("Country not found.");
+                    }
+                    break;
+                }
+                case 3: {
+                    System.out.println("Total countries: " + library.countEntities());
+                    break;
+                }
+                case 4: {
+                    System.out.print("Enter country ID to search: ");
+                    int id = userInput.nextInt();
+                    GeographicalEntity entity = library.findEntityById(id);
+                    if (entity != null) {
+                        entity.printDetails(); // Demonstrating polymorphism
+                    } else {
+                        System.out.println("Country not found.");
+                    }
+                    break;
+                }
+                case 5: {
+                    System.out.println("Application closing - Goodbye!");
+                    userInput.close();
+                    return;
+                }
+                default:
+                    System.out.println("Invalid selection. Try again.");
+                    break;
+            }
+        }
+    }
+}
