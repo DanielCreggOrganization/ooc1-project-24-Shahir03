@@ -14,10 +14,10 @@ public class Country extends GeographicalEntity {
 
     //Getter Methods
     
-    public float getnumberOfCitizens(){
+    public float getNumberOfCitizens(){
         return this.numberOfCitizens;
     }
-    public double getaveragesalaryEuro(){
+    public double getAverageSalaryEuro(){
         return this.averagesalaryEuro;
     }
 
