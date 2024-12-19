@@ -27,6 +27,15 @@ public class Country extends GeographicalEntity {
     }
     public void setAveragesalaryEuro(double averagesalaryEuro){
         this.averagesalaryEuro = averagesalaryEuro;
-    }    
+    }
 
+    // Override printDetails method (polymorphism)
+    @Override
+    public void printDetails() {
+    System.out.println("Country ID: " + getIdNumber());
+    System.out.println("Country Name: " + getName());
+    System.out.println("Number of Citizens: " + getNumberOfCitizens());
+    System.out.println("Average Salary (Euro): " + getAverageSalaryEuro());
+  }
 }
+
