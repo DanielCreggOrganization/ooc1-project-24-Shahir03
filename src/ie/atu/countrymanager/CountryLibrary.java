@@ -3,16 +3,16 @@ package ie.atu.countrymanager;
 import java.util.ArrayList;
 
 public class CountryLibrary {
-    private ArrayList<Country> countries;
+    private ArrayList<GeographicalEntity> countries;
 
     //Adding a Constructor
     public CountryLibrary(){
         countries = new ArrayList<>();
     }
 
-    //Add a Country
-    public void addCountry( Country country){
-        countries.add(country);
+    //Add a geographical entity
+    public void addEntity( GeographicalEntity entity){
+        countries.add(entity);
     }
 
     //Delete a Country by using its ID
