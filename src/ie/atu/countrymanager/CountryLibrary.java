@@ -3,23 +3,23 @@ package ie.atu.countrymanager;
 import java.util.ArrayList;
 
 public class CountryLibrary {
-    private ArrayList<GeographicalEntity> countries;
+    private ArrayList<GeographicalEntity> entities;
 
     //Adding a Constructor
     public CountryLibrary(){
-        countries = new ArrayList<>();
+        entities = new ArrayList<>();
     }
 
     //Add a geographical entity
-    public void addEntity( GeographicalEntity entity){
-        countries.add(entity);
+    public void addEntity(GeographicalEntity entity){
+        entities.add(entity);
     }
 
     //Delete a Country by using its ID
     public boolean deleteEntity(int idNumber){
         for (int i = 0; i < entities.size(); i++) {
-            if (countries.get(i).getidNumber() == idNumber){
-                countries.remove(i);
+            if (entities.get(i).getIdNumber() == idNumber){
+                entities.remove(i);
                 return true;
             }
         }
@@ -28,13 +28,13 @@ public class CountryLibrary {
 
     //Count the total number of Countries
     public int countEntities(){
-        return countries.size();
+        return entities.size();
     }
 
     //Search for a country by ID
 public GeographicalEntity findEntityById(int idNumber){
-    for (Country country : entities) {
-        if (entity.getidNumber() == idNumber){
+    for (GeographicalEntity entity: entities) {
+        if (entity.getIdNumber() == idNumber){
             return entity;
         }
     }
