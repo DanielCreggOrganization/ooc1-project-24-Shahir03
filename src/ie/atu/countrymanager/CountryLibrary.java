@@ -16,8 +16,8 @@ public class CountryLibrary {
     }
 
     //Delete a Country by using its ID
-    public boolean deleteCountry(int idNumber){
-        for (int i = 0; i < countries.size(); i++) {
+    public boolean deleteEntity(int idNumber){
+        for (int i = 0; i < entities.size(); i++) {
             if (countries.get(i).getidNumber() == idNumber){
                 countries.remove(i);
                 return true;
@@ -27,15 +27,15 @@ public class CountryLibrary {
     }
 
     //Count the total number of Countries
-    public int countCountries(){
+    public int countEntities(){
         return countries.size();
     }
 
     //Search for a country by ID
-public Country findCountrybyId(int idNumber){
-    for (Country country : countries) {
-        if (country.getidNumber() == idNumber){
-            return country;
+public GeographicalEntity findEntityById(int idNumber){
+    for (Country country : entities) {
+        if (entity.getidNumber() == idNumber){
+            return entity;
         }
     }
     return null; //Return null if Country was not Found
