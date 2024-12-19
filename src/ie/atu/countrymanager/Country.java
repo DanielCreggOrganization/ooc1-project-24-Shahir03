@@ -1,16 +1,13 @@
 package ie.atu.countrymanager;
 
-public class Country {
+public class Country extends GeographicalEntity {
     //Instance Variables
-    private int idNumber; //Unique id
-    private String name;
     private float numberOfCitizens;
     private double averagesalaryEuro;//add average
 
     //Constructor
     public Country(int idNumber, String name, float numberOfCitizens, double averagesalaryEuro){
-        this.idNumber = idNumber;
-        this.name = name;
+        super(idNumber, name); // Calling the constructor of the superclass (known as GeographicalEntity)
         this.numberOfCitizens = numberOfCitizens;
         this.averagesalaryEuro = averagesalaryEuro;
     }
