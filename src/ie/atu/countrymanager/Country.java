@@ -13,12 +13,7 @@ public class Country extends GeographicalEntity {
     }
 
     //Getter Methods
-    public int getidNumber(){
-        return this.idNumber;
-    }
-    public String getName(){
-        return this.name;
-    }
+    
     public float getnumberOfCitizens(){
         return this.numberOfCitizens;
     }
@@ -27,12 +22,6 @@ public class Country extends GeographicalEntity {
     }
 
     //Setter Methods
-    public void setidNumber(int idNumber){
-        this.idNumber = idNumber;
-    }
-    public void setname(String name){
-        this.name = name;
-    }
     public void setNumberOfCitizens(float numberOfCitizens){
         this.numberOfCitizens = numberOfCitizens;    
     }
