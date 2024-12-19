@@ -26,4 +26,6 @@ package ie.atu.countrymanager;
       this.name = name;
   }
 
-}
+     //Add the Abstract method as it is one of the 4 OOP
+     public abstract void printDetails();
+ }
